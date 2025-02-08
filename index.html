@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Character with Movement</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="gameCanvas" width="288" height="288"></canvas>
+    
+    <!-- Core utilities and configuration -->
+    <script src="src/constants.js"></script>
+    <script src="src/utils.js"></script>
+    
+    <!-- Game state -->
+    <script src="src/state/gameState.js"></script>
+    
+    <!-- Configuration -->
+    <script src="src/config/config.js"></script>
+    <script src="src/config/names.js"></script>
+    <script src="src/config/zones.js"></script>
+    <script src="src/config/buildings.js"></script>
+    
+    <!-- Building system (needs to be before systems that use it) -->
+    <script src="src/buildings/BuildingLayouts.js"></script>
+    <script src="src/buildings/Building.js"></script>
+    <script src="src/buildings/interior_content.js"></script>
+    <script src="src/buildings/BuildingManager.js"></script>
+    
+    <!-- Core systems -->
+    <script src="src/systems/camera.js"></script>
+    <script src="src/systems/collision.js"></script>
+    <script src="src/systems/chunks.js"></script>
+    <script src="src/systems/render.js"></script>
+    <script src="src/systems/render_interior.js"></script>
+    <script src="src/systems/input.js"></script>
+    <script src="src/systems/effects.js"></script>
+    <script src="src/systems/interaction.js"></script>
+    <script src="src/systems/interior_overlay.js"></script>
+    <script src="src/systems/plants.js"></script>
+    <script src="src/systems/path_tracking.js"></script>
+    <script src="src/systems/TransitionManager.js"></script>
+    
+    <!-- World generation -->
+    <script src="src/worldgen/tiles.js"></script>
+    <script src="src/worldgen/mountain.js"></script>
+    <script src="src/worldgen/forest.js"></script>
+    <script src="src/worldgen/desert.js"></script>
+    <script src="src/worldgen/city.js"></script>
+    <script src="src/worldgen/special_locations.js"></script>
+    
+    <!-- UI System -->
+    <script src="src/ui/menu.js"></script>
+    <script src="src/ui/message.js"></script>
+    <script src="src/input/controls.js"></script>
+    
+    <!-- Game entities -->
+    <script src="src/entities/sprites.js"></script>
+    <script src="src/entities/player.js"></script>
+    <script src="src/entities/npc.js"></script>
+    
+    <!-- Systems that depend on entities -->
+    <script src="src/systems/npcs.js"></script>
+    <script src="src/systems/notifications.js"></script>
+    <script src="src/systems/messages.js"></script>
+    
+    <!-- Main game loop -->
+    <script src="src/game.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+/* General body styling */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #030303;
+    font-family: Arial, sans-serif;
+}
+
+/* Canvas styling */
+canvas {
+    border: 2px solid #000;
+    background-color: #ffffff;
+    image-rendering: pixelated; /* Ensures sharp rendering for the pixelated game */
+}
